@@ -43,10 +43,10 @@ nav ul {
     padding: 0;
 }
 
-/*reemplazado por microdesafio 3 clase 22
+/*reemplazado por microdesafio 3 clase 22*/
 #user-list .fas {
     color: black;
-}*/
+}
 
 .logo {
     text-align: left;
@@ -66,6 +66,7 @@ nav ul {
 
 #icon-tarjeta {
     margin-left: 25px;
+    color: black;
 }
 
 .compra-cuotas i {
@@ -76,7 +77,7 @@ nav ul {
 
 .compra-cuotas p {
     font-size: 14px;
-    color: #1259c3;
+    color: black;
     font-weight: bold;
     margin: 0;
 }
