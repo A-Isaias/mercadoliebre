@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Estilos del formulario de inicio de sesión */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+select {
+    height: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #EAC926;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d5bd19;
+}
+
+/* Estilos del header */
+header {
+    background-color: #EAC926;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: left;
+}
+
+.barra-busqueda {
+    text-align: center;
+    margin: 50px auto 10px;
+    width: 60%;
+}
+
+.compra-cuotas {
+    text-align: right;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.compra-cuotas i {
+    margin-right: 5px;
+}
+
+#nav-list,
+#user-list {
+    display: flex;
+    align-items: center;
+}
+
+#nav-list li,
+#user-list li {
+    margin-left: 10px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-list li a,
+#user-list li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*a ver si puedo desaparecer los puntos*/
+#nav-list li::marker,
+#user-list li::marker {
+  display: none;
+}
+#nav-list li::before,
+#user-list li::before {
+  content: none;
+}
+/*Para que el color de fondo del botón de envío del formulario */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #EAC926;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Agregamos la transición para hacer el cambio suave de color */
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar el color de fondo al pasar el mouse por encima */
+button[type="submit"]:hover {
+    background-color: #0022AA;
+}

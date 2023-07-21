@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuario</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" style="width: 150px; height: auto;">
+            </div>
+
+            <div class="barra-busqueda">
+                <form action="#" method="GET">
+                    <input type="text" name="busqueda" placeholder="Buscar productos, marcas" class="texto-fondo">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="compra-cuotas">
+                <i class="fas fa-credit-card" id="icon-tarjeta"></i>
+                <p>Compra en cuotas con tarjeta de crédito</p>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul id="user-list">
+                    <li><a href="#">Creá tu cuenta</a><i class="fas fa-user-plus"></i></li>
+                    <li><a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#">Mis compras</a><i class="fas fa-shopping-cart"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Login de Usuario</h1>
+    <form action="index.html" method="post">
+        <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" pattern=".{3,}" title="El nombre de usuario debe tener al menos 3 caracteres">
+
+        <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

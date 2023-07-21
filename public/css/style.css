@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Etiqueta 'a' */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Etiqueta 'body' y elementos del 'body' */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #EAC926;
+    color: #ebebeb;
+    padding: 10px;
+}
+
+header .barra-busqueda {
+    text-align: left;
+}
+
+.burger-menu {
+    margin: auto;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1259c3;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*reemplazado por microdesafio 3 clase 22
+#user-list .fas {
+    color: black;
+}*/
+
+.logo {
+    text-align: left;
+}
+
+.barra-busqueda {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.compra-cuotas {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#icon-tarjeta {
+    margin-left: 25px;
+}
+
+.compra-cuotas i {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #39b54a;
+}
+
+.compra-cuotas p {
+    font-size: 14px;
+    color: #1259c3;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Banner {
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Banner {
+    text-align: center;
+    position: relative;
+    /* Para que los elementos internos estén posicionados relativos a este contenedor */
+}
+
+.img_banner {
+    max-width: 100%;
+    /* Hace que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.Productos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.Productos p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1259c3;
+    width: 30%;
+}
+
+.Productos h4 {
+    margin: 0;
+    width: 70%;
+}
+
+/*.Productos {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.Productos img {
+    width: 100%;
+    height: auto;
+}
+
+.Productos p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1259c3;
+}*/
+
+footer {
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer section i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 360px) {
+    .Productos h4 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 361px) {
+    /* Navegación en tablets (ancho mínimo 361px) */
+
+    header .logo {
+        text-align: left;
+    }
+
+    header .barra-busqueda {
+        text-align: left;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+        /*background-color: #f2f2f2;*/
+    }
+
+    main section:not(:first-child) {
+        background-color: #f2f2f2;
+    }
+
+    .Productos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+    }
+
+    .Productos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Productos p {
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #1259c3;
+    }
+
+    .Productos .descuento {
+        display: flex;
+        align-items: center;
+    }
+
+    .Productos .descuento p {
+        margin-right: 5px;
+    }
+
+
+    @media screen and (min-width: 769px) {
+        /* Navegación en desktop (ancho mínimo 769px) */
+
+        header .logo {
+            display: block;
+            text-align: left;
+        }
+
+        header .barra-busqueda {
+            text-align: left;
+        }
+
+        .burger-menu {
+            display: none;
+        }
+
+        main {
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        /*.Productos {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /*-- Alinea los productos a la izquierda -->
+            border-top: 1px solid #ebebeb;
+            padding: 15px;
+        }
+    
+        .Productos img {
+            max-width: 300px; /* Ajusta el tamaño de la imagen a 150px (o el valor deseado)
+            margin-right: 20px; /* Agrega espacio entre la imagen y el texto del producto 
+        }*/
+
+
+    }
+
+    main section article i {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+    }
+}
+
+/* Ocultar el nombre del producto inicialmente */
+.Productos h4 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar el nombre del producto al pasar el mouse por encima */
+.Productos:hover h4 {
+    opacity: 1;
+}
+
+/* Agregar sombra a la tarjeta de producto al pasar el mouse por encima */
+.Productos {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.Productos:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rotar el ícono del camión de envío al pasar el mouse por encima */
+.Productos i {
+    transition: transform 0.3s ease;
+}
+
+.Productos:hover i {
+    transform: rotate(90deg);
+}
+
+.Productos:hover i {
+    transform: rotate(90deg);
+}
+/*microdesafio 3 clase 22*/
+/* Estilo del footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    position: relative; /* Agregamos position: relative para establecer un contexto de posición */
+}
+
+footer section {
+    flex: 0 0 calc(33.33% - 20px); /* Establece el ancho de cada sección a un tercio del espacio disponible (menos el espacio entre ellas) */
+    text-align: center;
+    margin: 10px;
+}
+
+footer section i {
+    font-size: 2em;
+    color: #1259c3; /* Cambia el color de los íconos */
+    margin-bottom: 10px;
+}
+
+footer section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Agrega un margen derecho a la primera columna */
+footer section:first-child h4 {
+    margin-right: 10px;
+}
+
+/* Ubica el texto de copyright a la izquierda */
+footer #Copyright {
+    position: absolute;
+    top: 180px; /*toque los numeros hasta que quedo donde quise*/
+    left: 35px;
+}
