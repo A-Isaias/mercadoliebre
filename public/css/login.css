@@ -117,6 +117,24 @@ header {
 #user-list li::before {
   content: none;
 }
+
+/* Estilo para los campos de entrada */
+input {
+    display: block;
+    width: 100%;
+    max-width: 30ch; /* Limita el ancho a xx caracteres */
+    margin-bottom: 10px; /* Agrega espacio entre los campos */
+}
+
+/* Estilos para los campos de entrada 
+input#usuario {
+    max-width: 40ch; /* Limita el ancho a xx caracteres 
+}
+
+input#contrasena {
+    max-width: 40ch; /* Limita el ancho a xx caracteres
+}*/
+
 /*Para que el color de fondo del botón de envío del formulario */
 button[type="submit"] {
     padding: 10px 20px;
