@@ -108,8 +108,10 @@ section {
     margin-bottom: 10px;
 }
 
+/* Estilo para los productos */
 .Productos {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #ebebeb;
@@ -119,35 +121,62 @@ section {
     margin: 0 auto;
 }
 
-.Productos p {
-    margin: 0;
-    font-size: 14px;
-    font-weight: bold;
-    color: #1259c3;
-    width: 30%;
-}
-
-.Productos h4 {
-    margin: 0;
-    width: 70%;
-}
-
-/*.Productos {
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-
 .Productos img {
     width: 100%;
     height: auto;
 }
 
+.Productos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
 .Productos p {
-    margin: 10px 0;
     font-size: 14px;
     font-weight: bold;
     color: #1259c3;
-}*/
+    width: 30%;
+    margin: 0;
+}
+
+.Productos h4 {
+    margin: 0;
+    width: 100%;
+}
+
+/* Estilo para el ícono del camión */
+.Productos div i {
+    font-size: 20px;
+    color: green;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para cambiar el color del texto del descuento */
+.Productos p:last-child {
+    color: green;
+}
+
+/* Estilo para animar el giro del icono del camión hacia arriba */
+.Productos div:hover i {
+    transform: rotate(-90deg);
+}
+
+/* Estilo para alinear el ícono del camión a la derecha */
+.Productos .icono-camion {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.Productos .icono-camion i {
+    margin-left: auto; /* Empuja el ícono del camión hacia la derecha */
+}
+
 
 footer {
     text-align: center;
