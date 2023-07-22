@@ -133,3 +133,52 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0022AA;
 }
+
+/* Estilo del footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    position: relative;
+}
+
+footer section {
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    margin: 10px;
+}
+
+footer section i {
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo para cambiar el color de los íconos al pasar el mouse por encima */
+footer section i:hover {
+    color: #39b54a; 
+}
+
+
+/* Estilo del texto de copyright */
+footer section h4#Copyright {
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+/* Media Queries para ajustar la posición del texto de copyright en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    footer section h4#Copyright {
+        position: static;
+        text-align: left;
+        margin-top: 10px;
+        left: 0;
+    }
+}
+/*fin*/
