@@ -149,13 +149,29 @@ section {
 }
 
 /* Estilo para el ícono del camión */
-.Productos div i {
-    font-size: 20px;
-    color: green;
-    margin-right: 5px;
-    transition: transform 0.3s ease;
+.Productos .icono-camion {
+    position: relative;
 }
 
+.Productos .icono-camion i {
+    font-size: 20px;
+    color: green;
+}
+
+/* Estilo para el círculo alrededor del ícono del camión */
+.Productos .icono-camion::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid green;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.8;
+}
 /* Estilo para cambiar el color del texto del descuento */
 .Productos p:last-child {
     color: green;
