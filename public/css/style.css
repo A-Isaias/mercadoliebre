@@ -1,3 +1,4 @@
+/*Estilos grales*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +15,12 @@ body {
   margin: 0;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*Estilos del header*/
 header {
   background-color: #eac926;
   color: #ebebeb;
@@ -36,12 +43,13 @@ header .barra-busqueda {
   justify-content: center;
 }
 
+/*Barra nav*/
 nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-/*reemplazado por microdesafio 3 clase 22*/
+/*reemplazado por microdesafio 3 clase 22 - Estilos de usuario*/
 #user-list .fas {
   color: black;
 }
@@ -80,19 +88,15 @@ nav ul {
   margin: 0;
 }
 
-.Banner {
-  text-align: center;
-}
-
-main {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.Banner {
+ /* Estilos del Banner */
+ .Banner {
   text-align: center;
   position: relative;
   /*Contenedor elementos  */
+}
+main {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .img_banner {
@@ -116,7 +120,6 @@ section {
 
 .Productos {
   flex: 1 0 100%;
-  /* Ajusta el ancho de los artículos, ocupando todo el ancho en mobile */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,7 +157,7 @@ section {
   width: 100%;
 }
 
-/* Estilo ícono camión */
+ /* Estilo ícono camión */
 .Productos div i {
   font-size: 20px;
   color: green;
@@ -162,69 +165,57 @@ section {
   transition: transform 0.3s ease;
 }
 
-/* Estilo para cambiar el color del texto del descuento */
+/*Estilo para cambiar el color del texto del descuento */
 .Productos p:last-child {
   color: green;
   opacity: 0.7;
 }
-
-/* Estilo para animar el giro del icono del camión hacia arriba */
+/*Estilos camion*/
+/* Estilo animar icono del camión*/
 .Productos div:hover i {
   transform: rotate(-90deg);
 }
 
-/* Estilo para alinear el ícono del camión a la derecha */
+/*Alinea el ícono del camión a la derecha */
 .Productos .icono-camion {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 5px;
+  position: relative; 
 }
 
 .Productos .icono-camion i {
-  margin-left: auto; /* Empuja el ícono del camión hacia la derecha */
-}
-
-/* Estilo ícono camión */
-.Productos .icono-camion {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 5px;
-  position: relative; /* Agregamos la posición relativa para posicionar el círculo */
-}
-
-.Productos .icono-camion i {
+  margin-left: auto; 
   font-size: 20px;
   color: green;
   margin-right: 5px;
   transition: transform 0.3s ease;
 }
 
-/* Estilo para el círculo alrededor del ícono del camión */
+/*Estilo circulo camion*/
 .Productos .icono-camion::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 94%; /* Cambiamos la posición del círculo al 50% del icono */
+  left: 94%; /*Cambia la posición del círculo*/
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   border: 2px solid green;
   border-radius: 50%;
-  z-index: 0; /* Cambiamos el z-index para que el círculo esté detrás del icono */
+  z-index: 0; 
   opacity: 0.8;
 }
 
-/* Resto del código para el ícono y su animación se mantiene igual */
 .Productos > div i {
   position: relative;
   font-size: 20px;
   color: green;
   transform: rotate(0);
   transition: transform 0.3s ease;
-  right: 0; /* Coloca el ícono sobre el margen derecho */
+  right: 0; 
 }
 
-/* Estilo para animar el giro del icono del camión hacia arriba */
 .Productos:hover > div i {
   transform: rotate(-90deg);
 }
@@ -235,12 +226,12 @@ section {
   transition: opacity 0.3s ease;
 }
 
-/* Mostrar el nombre del producto al pasar el mouse por encima */
+/* Mostrar el nombre del producto when hover*/
 .Productos:hover h4 {
   opacity: 1;
 }
 
-/* Rotar el ícono del camión de envío al pasar el mouse por encima */
+/* Rotar el ícono del camión when hover */
 .Productos i {
   transition: transform 0.3s ease;
 }
@@ -249,16 +240,17 @@ section {
   transform: rotate(90deg);
 }
 
-/* Sombra para tarjeta de producto al pasar el mouse por encima */
+/* Sombra para tarjeta de producto w/hover*/
 .Productos {
-  box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.5); /* Cambiar el color a rojo por que no se ve */
+  box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.5); /* Cambie el color a rojo por que no se ve */
   transition: box-shadow 0.3s ease;
 }
 
 .Productos:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.5); /* Cambiar el color a azul x que no se ve  */
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.5); /* Cambie el color a azul x que no se ve  */
 }
-/*Así es lo correcto*/
+
+  /*Así es lo correcto*/
 /*.Productos {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -292,7 +284,7 @@ footer section i {
   transition: color 0.3s ease;
 }
 
-/* Estilo para cambiar el color de los íconos al pasar el mouse por encima */
+/* Estilo para cambiar el color de los íconos w/hover*/
 footer section i:hover {
   color: #39b54a;
 }
@@ -304,6 +296,7 @@ footer section h4#Copyright {
   bottom: 10px;
   left: 20px;
 }
+
 /* Media Queries */
 @media screen and (min-width: 361px) {
   /* Navegación en tablet (ancho mínimo 361px) */
@@ -384,7 +377,7 @@ footer section h4#Copyright {
     cursor: pointer;
   }
 
-  /* Estilos para el texto 'Compra en cuotas y sin tarjeta de crédito' */
+  /* Estilos para el texto Compra en cuotas y sin tarjeta de crédito */
   .compra-cuotas {
     flex: 1 0 20%;
     text-align: right;
@@ -423,7 +416,7 @@ footer section h4#Copyright {
     display: none;
   }
 
-  /* Estilos para los textos 'Creá tu cuenta', 'Ingresá' y 'Mis compras' en la segunda fila */
+  /* Estilos para los textos Creá tu cuenta -Ingresá - Mis compras (2da fila) */
   #user-list li {
     display: inline-block;
   }
