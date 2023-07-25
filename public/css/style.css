@@ -12,12 +12,12 @@ a {
 
 /* Etiqueta 'body' y elementos del 'body' */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
 header {
-  background-color: #eac926;
+  background-color: #EAC926;
   color: #ebebeb;
   padding: 10px;
 }
@@ -110,22 +110,23 @@ section {
 
 /* Estilo para los productos */
 .ProductosContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* Ajusta los espacios entre los artículos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Ajusta los espacios entre los artículos */
 }
 
 .Productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+  flex: 1 0 100%;
+  /* Ajusta el ancho de los artículos, ocupando todo el ancho en mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 
 .Productos img {
@@ -156,29 +157,13 @@ section {
 }
 
 /* Estilo para el ícono del camión */
-.Productos .icono-camion {
-  position: relative;
-}
-
-.Productos .icono-camion i {
+.Productos div i {
   font-size: 20px;
   color: green;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
 }
 
-/* Estilo para el círculo alrededor del ícono del camión */
-.Productos .icono-camion::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 96%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border: 2px solid green;
-  border-radius: 50%;
-  z-index: 1;
-  opacity: 0.8;
-}
 /* Estilo para cambiar el color del texto del descuento */
 .Productos p:last-child {
   color: green;
@@ -200,180 +185,25 @@ section {
   margin-left: auto; /* Empuja el ícono del camión hacia la derecha */
 }
 
-
-footer {
-    text-align: center;
+/* Estilo personalizado para el icono del camión */
+/* Estilo para la clase "truck-icon" (icono del camión) */
+.truck-icon {
+  position: relative;
+  right: 0; /* Posiciona el icono del camión a la derecha */
+}
+.Productos > div i {
+  position: relative;
+  font-size: 20px;
+  color: green;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+  right: 0; /* Coloca el ícono sobre el margen derecho */
 }
 
-footer section {
-    margin-bottom: 20px;
+/* Estilo para animar el giro del icono del camión hacia arriba */
+.Productos:hover > div i {
+  transform: rotate(-90deg);
 }
-
-footer section i {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 360px) {
-    .Productos h4 {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 361px) {
-    /* Navegación en tablets (ancho mínimo 361px) */
-
-    header .logo {
-        text-align: left;
-    }
-
-    header .barra-busqueda {
-        text-align: left;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-
-    main {
-        width: 90%;
-        margin: 0 auto;
-        /*background-color: #f2f2f2;*/
-    }
-
-    main section:not(:first-child) {
-        background-color: #f2f2f2;
-    }
-
-    .Productos {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        border-top: 1px solid #ebebeb;
-        padding: 15px;
-    }
-
-    .Productos img {
-        width: 100%;
-        height: auto;
-    }
-
-    .Productos p {
-        margin: 5px 0;
-        font-size: 14px;
-        font-weight: bold;
-        color: #1259c3;
-    }
-
-    .Productos .descuento {
-        display: flex;
-        align-items: center;
-    }
-
-    .Productos .descuento p {
-        margin-right: 5px;
-    }
-
-    /* Estilos del header en versión desktop */
-@media screen and (min-width: 769px) {
-    header {
-        background-color: #EAC926;
-        color: #000;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .barra-busqueda {
-        text-align: left;
-        margin: 0;
-        width: auto;
-    }
-
-    .compra-cuotas {
-        text-align: left;
-        margin: 0;
-    }
-
-    .compra-cuotas i {
-        margin-right: 10px;
-    }
-
-    .header-bottom {
-        display: flex;
-        align-items: center;
-    }
-
-    #nav-list,
-    #user-list {
-        display: flex;
-        align-items: center;
-    }
-
-    #nav-list li,
-    #user-list li {
-        margin-left: 20px;
-    }
-    .burger-menu {
-        display: none;
-    }
-}
-
-    /*
-    @media screen and (min-width: 769px) {
-        /* Navegación en desktop (ancho mínimo 769px) */
-
-        /*header .logo {
-            display: block;
-            text-align: left;
-        }
-
-        header .barra-busqueda {
-            text-align: left;
-        }
-
-        .burger-menu {
-            display: none;
-        }
-
-        main {
-            width: 90%;
-            margin: 0 auto;
-
-        }*/
-
-        /*.Productos {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start; /*-- Alinea los productos a la izquierda -->
-            border-top: 1px solid #ebebeb;
-            padding: 15px;
-        }
-    
-        .Productos img {
-            max-width: 300px; /* Ajusta el tamaño de la imagen a 150px (o el valor deseado)
-            margin-right: 20px; /* Agrega espacio entre la imagen y el texto del producto 
-        }*/
-
-
-    }
-
-    main section article i {
-        display: block;
-        font-size: 16px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        position: absolute;
-        right: 20px;
-        top: -15px;
-    }
 
 /* Ocultar el nombre del producto inicialmente */
 .Productos h4 {
@@ -405,30 +235,6 @@ footer section i {
   transform: rotate(90deg);
 }
 
-.Productos:hover i {
-    transform: rotate(90deg);
-}
-/* Estilo personalizado para el icono del camión */
-/* Estilo para la clase "truck-icon" (icono del camión) */
-.truck-icon {
-    position: relative;
-    right: 0; /* Posiciona el icono del camión a la derecha */
-}
-.Productos > div i {
-    position: relative;
-    font-size: 20px;
-    color: green;
-    transform: rotate(0);
-    transition: transform 0.3s ease;
-    right: 0; /* Coloca el ícono sobre el margen derecho */
-}
-
-/* Estilo para animar el giro del icono del camión hacia arriba */
-.Productos:hover > div i {
-    transform: rotate(-90deg);
-}
-/*microdesafio 3 clase 22*/
-
 /* Estilo del footer */
 footer {
   display: flex;
@@ -455,7 +261,7 @@ footer section i {
 
 /* Estilo para cambiar el color de los íconos al pasar el mouse por encima */
 footer section i:hover {
-  color: #39b54a;
+  color: #39b54a; 
 }
 
 /* Estilo del texto de copyright */
@@ -465,14 +271,115 @@ footer section h4#Copyright {
   bottom: 10px;
   left: 20px;
 }
-
-/* Media Queries para ajustar la posición del texto de copyright en pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-    footer section h4#Copyright {
-        position: static;
-        text-align: left;
-        margin-top: 10px;
-        left: 0;
-    }
+/* Media Queries */
+@media screen and (min-width: 361px) {
+  /* Navegación en tablet (ancho mínimo 361px) */
+  .Productos {
+      flex: 1 0 calc(50% - 10px);
+      /* Ajusta el ancho de los artículos para que haya dos por fila */
+  }
 }
-/*fin*/
+
+@media screen and (min-width: 769px) {
+  /* Navegación en desktop (ancho mínimo 769px) */
+  .Productos {
+      flex: 1 0 calc(25% - 15px);
+      /* Ajusta el ancho de los artículos para que haya cuatro por fila */
+  }
+
+  /* Estilos para la primera fila del header */
+  .header-row1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+
+  /* Estilos para el logo */
+  .logo {
+      flex: 1 0 30%;
+      text-align: left;
+  }
+
+  .logo img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+  }
+
+  /* Estilos para la barra de búsqueda */
+  .barra-busqueda {
+      flex: 1 0 50%;
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .barra-busqueda form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .barra-busqueda input[type="text"] {
+      width: 100%;
+      max-width: 400px;
+      padding: 5px;
+      font-size: 16px;
+  }
+
+  .barra-busqueda button {
+      padding: 5px;
+      background-color: #1259c3;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+
+  /* Estilos para el texto 'Compra en cuotas y sin tarjeta de crédito' */
+  .compra-cuotas {
+      flex: 1 0 20%;
+      text-align: right;
+  }
+
+  /* Estilos para la segunda fila del header */
+  .header-row2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+
+  /* Estilos para el menú de navegación */
+  .navbar {
+      flex: 1 0 50%;
+      text-align: left;
+  }
+
+  .navbar ul {
+      display: flex;
+  }
+
+  .navbar li {
+      margin: 0 10px;
+  }
+
+  /* Estilos para el menú de usuario */
+  #user-list {
+      flex: 1 0 20%;
+      text-align: right;
+  }
+
+  /* Estilos para el burger menu */
+  .burger-menu {
+      display: none;
+  }
+
+  /* Estilos para los textos 'Creá tu cuenta', 'Ingresá' y 'Mis compras' en la segunda fila */
+  #user-list li {
+      display: inline-block;
+  }
+
+  #user-list i {
+      margin-left: 5px;
+  }
+}
