@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login de Usuario</title>
-    <link rel="stylesheet" type="text/css" href="/css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Mercado Liebre - Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/register.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="header-top">
+        <!-- Primera fila del header -->
+        <div class="header-row1">
             <div class="logo">
-                <!-- Agregar el enlace al logo -->
-                <a href="/">
-                    <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" style="width: 150px; height: auto;">
-                </a>
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
+                    style="width: 150px; height: auto;">
             </div>
-    
+
             <div class="barra-busqueda">
                 <form action="#" method="GET">
                     <input type="text" name="busqueda" placeholder="Buscar productos, marcas" class="texto-fondo">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
-    
+
             <div class="compra-cuotas">
                 <i class="fas fa-credit-card" id="icon-tarjeta"></i>
-                <p>Compra en cuotas con tarjeta de crédito</p>
+                <p>Compra en cuotas y sin tarjeta de crédito</p>
             </div>
         </div>
-    
-        <div class="header-bottom">
-            <nav>
+
+        <!-- Segunda fila del header -->
+        <div class="header-row2">
+            <!-- Menú de navegación -->
+            <nav class="navbar">
                 <ul id="nav-list">
-                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#Ofertas"> Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
             </nav>
-    
+
+            <!-- Menú de usuario -->
             <nav>
                 <ul id="user-list">
-                    <li><a href="/register">Creá tu cuenta</a><i class="fas fa-user-plus"></i></li>
-                    <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href="#">Mis compras</a><i class="fas fa-shopping-cart"></i></li>
+                    <li><a href="/register">Creá tu cuenta</a><i class="fas fa-user-plus"></i> </li>
+                    <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i> </li>
+                    <li><a href="#"> Mis compras</a><i class="fas fa-shopping-cart"></i></li>
                 </ul>
             </nav>
+
+            <!-- Burger menu -->
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
-    
+
+    <div class="Banner">
+        <img src="/images/img-home-banner.jpg" alt="" class="img_banner">
+    </div>
+    <main>
 <body>
     <h1>Registro de Usuario</h1>
     <form action="index.html" method="post">
