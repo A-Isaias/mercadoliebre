@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,10 @@
         <!-- Primera fila del header -->
         <div class="header-row1">
             <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
-                    style="width: 150px; height: auto;">
+                <a href="/"> <!-- Redirecciona a home-->
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
+                        style="width: 150px; height: auto;">
+                </a>
             </div>
 
             <div class="barra-busqueda">
@@ -64,63 +67,68 @@
         <img src="/images/img-home-banner.jpg" alt="" class="img_banner">
     </div>
     <main>
-<body>
-    <h1>Registro de Usuario</h1>
-    <form action="index.html" method="post">
-        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido" pattern=".{2,}" title="El nombre debe tener al menos 2 caracteres">
 
-        <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" pattern=".{3,}" title="El nombre de usuario debe tener al menos 3 caracteres">
+        <body>
+            <h1>Registro de Usuario</h1>
+            <form action="index.html" method="post">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido" pattern=".{2,}"
+                    title="El nombre debe tener al menos 2 caracteres">
 
-        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required placeholder="Fecha de nacimiento">
+                <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" pattern=".{3,}"
+                    title="El nombre de usuario debe tener al menos 3 caracteres">
 
-        <input type="text" id="domicilio" name="domicilio" required placeholder="Domicilio">
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required
+                    placeholder="Fecha de nacimiento">
 
-        <select id="perfil" name="perfil" required>
-            <option value="comprador">Comprador</option>
-            <option value="vendedor">Vendedor</option>
-        </select>
+                <input type="text" id="domicilio" name="domicilio" required placeholder="Domicilio">
 
-        <div id="categorias">
-            <label><input type="checkbox" name="categorias" value="electro"> Electro</label>
-            <label><input type="checkbox" name="categorias" value="moda"> Moda</label>
-            <label><input type="checkbox" name="categorias" value="hogar"> Hogar</label>
-            <label><input type="checkbox" name="categorias" value="jugueteria"> Juguetería</label>
-            <label><input type="checkbox" name="categorias" value="vida-sana"> Vida Sana</label>
-        </div>
+                <select id="perfil" name="perfil" required>
+                    <option value="comprador">Comprador</option>
+                    <option value="vendedor">Vendedor</option>
+                </select>
 
-        <input type="file" id="foto" name="foto" accept="image/*" required placeholder="Foto de usuario">
+                <div id="categorias">
+                    <label><input type="checkbox" name="categorias" value="electro"> Electro</label>
+                    <label><input type="checkbox" name="categorias" value="moda"> Moda</label>
+                    <label><input type="checkbox" name="categorias" value="hogar"> Hogar</label>
+                    <label><input type="checkbox" name="categorias" value="jugueteria"> Juguetería</label>
+                    <label><input type="checkbox" name="categorias" value="vida-sana"> Vida Sana</label>
+                </div>
 
-        <input type="password" id="password" name="password" required placeholder="Contraseña">
+                <input type="file" id="foto" name="foto" accept="image/*" required placeholder="Foto de usuario">
 
-        <input type="password" id="confirmar-password" name="confirmar-password" required placeholder="Confirmar Contraseña">
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
-    </form>
+                <input type="password" id="confirmar-password" name="confirmar-password" required
+                    placeholder="Confirmar Contraseña">
 
-    <footer>
-        <section>
-            <i class="fas fa-credit-card"></i>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section>
-            <i class="fas fa-gift"></i>
-            <h4>Envío gratis desde $ 2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-        <section>
-            <i class="fas fa-user-shield"></i>
-            <h4>Seguridad, de principio a fin</h4>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-        </section>
-        <section>
-            <h4 id="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-        </section>
-    </footer>
-</body>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+
+            <footer>
+                <section>
+                    <i class="fas fa-credit-card"></i>
+                    <h4>Pagá con tarjeta o en efectivo</h4>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
+                </section>
+                <section>
+                    <i class="fas fa-gift"></i>
+                    <h4>Envío gratis desde $ 2.500</h4>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                </section>
+                <section>
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                </section>
+                <section>
+                    <h4 id="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+                </section>
+            </footer>
+        </body>
 
 </html>

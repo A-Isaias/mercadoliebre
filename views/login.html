@@ -13,8 +13,10 @@
         <!-- Primera fila del header -->
         <div class="header-row1">
             <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
-                    style="width: 150px; height: auto;">
+                <a href="/"> <!-- Redirecciona a home-->
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"
+                        style="width: 150px; height: auto;">
+                </a>
             </div>
 
             <div class="barra-busqueda">
@@ -57,13 +59,14 @@
             </div>
         </div>
     </header>
-    
+
     <div class="Banner">
         <img src="/images/img-home-banner.jpg" alt="" class="img_banner">
     </div>
     <h1>Login de Usuario</h1>
     <form action="index.html" method="post">
-        <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" pattern=".{3,}" title="El nombre de usuario debe tener al menos 3 caracteres">
+        <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" pattern=".{3,}"
+            title="El nombre de usuario debe tener al menos 3 caracteres">
 
         <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña">
 
@@ -93,7 +96,7 @@
             <h4 id="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
         </section>
     </footer>
-    
+
 </body>
 
 </html>
