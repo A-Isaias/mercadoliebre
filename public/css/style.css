@@ -4,20 +4,18 @@
   padding: 0;
 }
 
-
 a {
   text-decoration: none;
   color: black;
 }
 
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
 header {
-  background-color: #EAC926;
+  background-color: #eac926;
   color: #ebebeb;
   padding: 10px;
 }
@@ -242,8 +240,6 @@ section {
   opacity: 1;
 }
 
-
-
 /* Rotar el ícono del camión de envío al pasar el mouse por encima */
 .Productos i {
   transition: transform 0.3s ease;
@@ -298,7 +294,7 @@ footer section i {
 
 /* Estilo para cambiar el color de los íconos al pasar el mouse por encima */
 footer section i:hover {
-  color: #39b54a; 
+  color: #39b54a;
 }
 
 /* Estilo del texto de copyright */
@@ -312,111 +308,127 @@ footer section h4#Copyright {
 @media screen and (min-width: 361px) {
   /* Navegación en tablet (ancho mínimo 361px) */
   .Productos {
-      flex: 1 0 calc(50% - 10px);
-      /* Ajusta el ancho de los artículos para que haya dos por fila */
+    flex: 1 0 calc(50% - 10px);
+    /* Ajusta el ancho de los artículos para que haya dos por fila */
+  }
+  /* Oculta el nav-bar */
+  .navbar {
+    display: none;
+  }
+  /*Oculta el menú de usuario */
+  #user-list {
+    display: none;
   }
 }
 
 @media screen and (min-width: 769px) {
   /* Navegación en desktop (ancho mínimo 769px) */
   .Productos {
-      flex: 1 0 calc(25% - 15px);
-      /* Ajusta el ancho de los artículos para que haya cuatro por fila */
+    flex: 1 0 calc(25% - 15px);
+    /* Ajusta el ancho de los artículos para que haya cuatro por fila */
+  }
+  /* Desoculta el nav-bar */
+  .navbar {
+    display: block;
+  }
+  /* Muestra el menú de usuario */
+  #user-list {
+    display: block;
   }
 
   /* Estilos para la primera fila del header */
   .header-row1 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
 
   /* Estilos para el logo */
   .logo {
-      flex: 1 0 30%;
-      text-align: left;
+    flex: 1 0 30%;
+    text-align: left;
   }
 
   .logo img {
-      width: 100%;
-      max-width: 150px;
-      height: auto;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
   }
 
   /* Estilos para la barra de búsqueda */
   .barra-busqueda {
-      flex: 1 0 50%;
-      text-align: center;
-      margin-top: 10px;
+    flex: 1 0 50%;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .barra-busqueda form {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .barra-busqueda input[type="text"] {
-      width: 100%;
-      max-width: 400px;
-      padding: 5px;
-      font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    font-size: 16px;
   }
 
   .barra-busqueda button {
-      padding: 5px;
-      background-color: #1259c3;
-      color: white;
-      border: none;
-      cursor: pointer;
+    padding: 5px;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
 
   /* Estilos para el texto 'Compra en cuotas y sin tarjeta de crédito' */
   .compra-cuotas {
-      flex: 1 0 20%;
-      text-align: right;
+    flex: 1 0 20%;
+    text-align: right;
   }
 
   /* Estilos para la segunda fila del header */
   .header-row2 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
 
   /* Estilos para el menú de navegación */
   .navbar {
-      flex: 1 0 50%;
-      text-align: left;
+    flex: 1 0 50%;
+    text-align: left;
   }
 
   .navbar ul {
-      display: flex;
+    display: flex;
   }
 
   .navbar li {
-      margin: 0 10px;
+    margin: 0 10px;
   }
 
   /* Estilos para el menú de usuario */
   #user-list {
-      flex: 1 0 20%;
-      text-align: right;
+    flex: 1 0 20%;
+    text-align: right;
   }
 
   /* Estilos para el burger menu */
   .burger-menu {
-      display: none;
+    display: none;
   }
 
   /* Estilos para los textos 'Creá tu cuenta', 'Ingresá' y 'Mis compras' en la segunda fila */
   #user-list li {
-      display: inline-block;
+    display: inline-block;
   }
 
   #user-list i {
-      margin-left: 5px;
+    margin-left: 5px;
   }
 }
