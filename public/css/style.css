@@ -242,15 +242,7 @@ section {
   opacity: 1;
 }
 
-/* Agregar sombra a la tarjeta de producto al pasar el mouse por encima */
-.Productos {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
 
-.Productos:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 /* Rotar el ícono del camión de envío al pasar el mouse por encima */
 .Productos i {
@@ -260,6 +252,25 @@ section {
 .Productos:hover i {
   transform: rotate(90deg);
 }
+
+/* Sombra para tarjeta de producto al pasar el mouse por encima */
+.Productos {
+  box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.5); /* Cambiar el color a rojo por que no se ve */
+  transition: box-shadow 0.3s ease;
+}
+
+.Productos:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.5); /* Cambiar el color a azul x que no se ve  */
+}
+/*Así es lo correcto*/
+/*.Productos {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.Productos:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}*/
 
 /* Estilo del footer */
 footer {
