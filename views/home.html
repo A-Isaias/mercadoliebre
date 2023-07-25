@@ -13,138 +13,153 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" style="width: 150px; height: auto;">
+        <!-- Primera fila del header -->
+        <div class="header-row1">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" style="width: 150px; height: auto;">
+            </div>
+
+            <div class="barra-busqueda">
+                <form action="#" method="GET">
+                    <input type="text" name="busqueda" placeholder="Buscar productos, marcas" class="texto-fondo">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="compra-cuotas">
+                <i class="fas fa-credit-card" id="icon-tarjeta"></i>
+                <p>Compra en cuotas y sin tarjeta de crédito</p>
+            </div>
         </div>
 
-        <div class="barra-busqueda">
-            <form action="#" method="GET">
-                <input type="text" name="busqueda" placeholder="Buscar productos, marcas" class="texto-fondo">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+        <!-- Segunda fila del header -->
+        <div class="header-row2">
+            <!-- Menú de navegación -->
+            <nav class="navbar">
+                <ul id="nav-list">
+                    <li><a href="#Ofertas"> Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
 
-        <div class="compra-cuotas">
-            <i class="fas fa-credit-card" id="icon-tarjeta"></i>
-            <p>Compra en cuotas y sin tarjeta de crédito</p>
-        </div>
+            <!-- Menú de usuario -->
+            <nav>
+                <ul id="user-list">
+                    <li><a href="/register">Creá tu cuenta</a><i class="fas fa-user-plus"></i> </li>
+                    <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i> </li>
+                    <li><a href="#"> Mis compras</a><i class="fas fa-shopping-cart"></i></li>
+                </ul>
+            </nav>
 
-
-        <nav>
-            <ul id="nav-list">
-                <li><a href="#Ofertas"> Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-        </nav>
-
-        <nav>
-            <ul id="user-list">
-                <li><a href="/register">Creá tu cuenta</a><i class="fas fa-user-plus"></i> </li>
-                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i> </li>
-                <li><a href="#"> Mis compras</a><i class="fas fa-shopping-cart"></i></li>
-            </ul>
-        </nav>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
+            <!-- Burger menu -->
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
+
     <div class="Banner">
         <img src="/images/img-home-banner.jpg" alt="" class="img_banner">
     </div>
     <main>
         <section>
             <h3>Basado en tu última visita</h3>
-            <div class="Productos" id="article">
-                <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+            <div class="ProductosContainer">
+                <div class="Productos" id="article">
+                    <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <p>$6670</p>
+                        <p>40% OFF</p>
+                    </div>
+                    <h4>Cafetera Moulinex</h4>
                 </div>
-                <div>
-                    <p>$6670</p>
-                    <p>40% OFF</p>
-                </div>
-                <h4>Cafetera Moulinex</h4>
-            </div>
 
-            <div class="Productos" id="article">
-                <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-                <div>
-                    <p>$230000</p>
-                    <p>20% OFF</p>
-                </div>
-                <h4>MacBook Pro 2019</h4>
-            </div>
 
-            <div class="Productos" id="article">
-                <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+                <div class="Productos" id="article">
+                    <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <p>$230000</p>
+                        <p>20% OFF</p>
+                    </div>
+                    <h4>MacBook Pro 2019</h4>
                 </div>
-                <div>
-                    <p>$70500</p>
-                    <p>10% OFF</p>
-                </div>
-                <h4>Samsung Galaxy S10</h4>
-            </div>
 
-            <div class="Productos" id="article">
-                <img src="/images/img-tv-samsung-smart.jpg" alt="Smart Samsung">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+                <div class="Productos" id="article">
+                    <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <p>$70500</p>
+                        <p>10% OFF</p>
+                    </div>
+                    <h4>Samsung Galaxy S10</h4>
                 </div>
-                <div>
-                    <p>$23200</p>
-                    <p>5% OFF</p>
+
+                <div class="Productos" id="article">
+                    <img src="/images/img-tv-samsung-smart.jpg" alt="Smart Samsung">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <p>$23200</p>
+                        <p>5% OFF</p>
+                    </div>
+                    <h4>SmartTv Samsung 43"</h4>
                 </div>
-                <h4>SmartTv Samsung 43"</h4>
             </div>
         </section>
 
         <section id="Ofertas">
             <h3>Sección de Ofertas</h3>
-            <div class="Productos" id="article">
-                <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+            <div class="ProductosContainer">
+                <div class="Productos" id="article">
+                    <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <p>$6670</p>
+                    <p>40% OFF</p>
+                    <h4>Cafetera Moulinex</h4>
                 </div>
-                <p>$6670</p>
-                <p>40% OFF</p>
-                <h4>Cafetera Moulinex</h4>
-            </div>
 
-            <div class="Productos" id="article">
-                <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+                <div class="Productos" id="article">
+                    <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <p>$230000</p>
+                    <P>20% OFF</P>
+                    <h4>MacBook Pro 2019</h4>
                 </div>
-                <p>$230000</p>
-                <P>20% OFF</P>
-                <h4>MacBook Pro 2019</h4>
-            </div>
 
-            <div class="Productos" id="article">
-                <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+                <div class="Productos" id="article">
+                    <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <p>$70500</p>
+                    <p>10% OFF</p>
+                    <h4>Samsung Galaxy S10</h4>
                 </div>
-                <p>$70500</p>
-                <p>10% OFF</p>
-                <h4>Samsung Galaxy S10</h4>
-            </div>
 
-            <div class="Productos" id="article">
-                <img src="/images/img-tv-samsung-smart.jpg" alt="Smart Samsung">
-                <div class="icono-camion">
-                    <i class="fa-solid fa-truck-fast"></i>
+                <div class="Productos" id="article">
+                    <img src="/images/img-tv-samsung-smart.jpg" alt="Smart Samsung">
+                    <div class="icono-camion">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <p>$23200</p>
+                    <P>5% OFF</P>
+                    <h4>SmartTv Samsung 43"</h4>
                 </div>
-                <p>$23200</p>
-                <P>5% OFF</P>
-                <h4>SmartTv Samsung 43"</h4>
             </div>
         </section>
     </main>
