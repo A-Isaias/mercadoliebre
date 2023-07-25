@@ -13,6 +13,7 @@
   body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    background-color: lightgray; 
   }
   
   main {
@@ -30,7 +31,21 @@
   header .barra-busqueda {
     text-align: left;
   }
-  
+  /* Estilos para la barra de búsqueda en el header */
+.barra-busqueda form {
+    background-color: transparent; /* Establecemos el fondo como transparente */
+    padding: 0; /* Quitamos el padding para eliminar el espacio entre el input y el borde */
+    border: none; /* Quitamos el borde */
+}
+
+.barra-busqueda input[type="text"] {
+    border: 1px solid #ccc; /* Volvemos a agregar el borde para el input */
+    border-radius: 4px; /* Mantenemos los bordes redondeados para el input */
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
   .burger-menu {
     margin: auto;
     text-align: center;
@@ -121,6 +136,9 @@ h1 {
 form {
     width: 90%;
     margin: 0 auto;
+    background-color: lightgray; /* Agregamos el fondo gris al formulario */
+    padding: 20px; /* Añadimos un poco de espacio alrededor del formulario */
+    border-radius: 8px; /* Agregamos bordes redondeados */
 }
 
 label {
