@@ -88,12 +88,14 @@ nav ul {
   margin: 0;
 }
 
- /* Estilos del Banner */
- .Banner {
+/* Estilos del Banner */
+.Banner {
   text-align: center;
   position: relative;
+  width: 100%;
   /*Contenedor elementos  */
 }
+
 main {
   width: 90%;
   margin: 0 auto;
@@ -157,7 +159,7 @@ section {
   width: 100%;
 }
 
- /* Estilo ícono camión */
+/* Estilo ícono camión */
 .Productos div i {
   font-size: 20px;
   color: green;
@@ -170,6 +172,7 @@ section {
   color: green;
   opacity: 0.7;
 }
+
 /*Estilos camion*/
 /* Estilo animar icono del camión*/
 .Productos div:hover i {
@@ -181,11 +184,11 @@ section {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 5px;
-  position: relative; 
+  position: relative;
 }
 
 .Productos .icono-camion i {
-  margin-left: auto; 
+  margin-left: auto;
   font-size: 20px;
   color: green;
   margin-right: 5px;
@@ -197,26 +200,27 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  left: 94%; /*Cambia la posición del círculo*/
+  left: 94%;
+  /*Cambia la posición del círculo*/
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   border: 2px solid green;
   border-radius: 50%;
-  z-index: 0; 
+  z-index: 0;
   opacity: 0.8;
 }
 
-.Productos > div i {
+.Productos>div i {
   position: relative;
   font-size: 20px;
   color: green;
   transform: rotate(0);
   transition: transform 0.3s ease;
-  right: 0; 
+  right: 0;
 }
 
-.Productos:hover > div i {
+.Productos:hover>div i {
   transform: rotate(-90deg);
 }
 
@@ -242,15 +246,17 @@ section {
 
 /* Sombra para tarjeta de producto w/hover*/
 .Productos {
-  box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.5); /* Cambie el color a rojo por que no se ve */
+  box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.5);
+  /* Cambie el color a rojo por que no se ve */
   transition: box-shadow 0.3s ease;
 }
 
 .Productos:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.5); /* Cambie el color a azul x que no se ve  */
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.5);
+  /* Cambie el color a azul x que no se ve  */
 }
 
-  /*Así es lo correcto*/
+/*Así es lo correcto*/
 /*.Productos {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -299,15 +305,18 @@ footer section h4#Copyright {
 
 /* Media Queries */
 @media screen and (min-width: 361px) {
+
   /* Navegación en tablet (ancho mínimo 361px) */
   .Productos {
     flex: 1 0 calc(50% - 10px);
     /* Ajusta el ancho de los artículos para que haya dos por fila */
   }
+
   /* Oculta el nav-bar */
   .navbar {
     display: none;
   }
+
   /*Oculta el menú de usuario */
   #user-list {
     display: none;
@@ -315,15 +324,18 @@ footer section h4#Copyright {
 }
 
 @media screen and (min-width: 769px) {
+
   /* Navegación en desktop (ancho mínimo 769px) */
   .Productos {
     flex: 1 0 calc(25% - 15px);
     /* Ajusta el ancho de los artículos para que haya cuatro por fila */
   }
+
   /* Desoculta el nav-bar */
   .navbar {
     display: block;
   }
+
   /* Muestra el menú de usuario */
   #user-list {
     display: block;
