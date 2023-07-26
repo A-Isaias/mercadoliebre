@@ -47,6 +47,7 @@ header .barra-busqueda {
 nav ul {
   list-style-type: none;
   padding: 0;
+  display: none;
 }
 
 
