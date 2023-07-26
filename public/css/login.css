@@ -129,12 +129,12 @@ form {
     margin: 0 auto;
     }
 
-.login {
+/*.login {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Esto asegura que el contenedor se extienda al 100% de la altura de la ventana */
-}
+  height: 100vh; /* Esto asegura que el contenedor se extienda al 100% de la altura de la ventana 
+}*/
 
 /* Estilo del formulario de inicio de sesión */
 h1 {
