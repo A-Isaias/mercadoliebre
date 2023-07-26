@@ -127,62 +127,60 @@ h1 {
 form {
     width: 90%;
     margin: 0 auto;
+    }
+
+..login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto asegura que el contenedor se extienda al 100% de la altura de la ventana */
+}
+
+/* Estilo del formulario de inicio de sesión */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+form {
+  width: 90%;
+  max-width: 500px; /* Limitamos el ancho máximo del formulario */
 }
 
 input,
 select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
 }
 
 select {
-    height: 40px;
+  height: 40px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #EAC926;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #EAC926;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #d5bd19;
+  background-color: #d5bd19;
 }
-
-/*a ver si puedo desaparecer los puntos*/
-#nav-list li::marker,
-#user-list li::marker {
-  display: none;
-}
-#nav-list li::before,
-#user-list li::before {
-  content: none;
-}
-
 /* Estilo para los campos de entrada */
 input {
     display: block;
     width: 100%;
-    max-width: 30ch; /* Limita el ancho a xx caracteres */
+    max-width: 100ch; /* Limita el ancho a xx caracteres */
     margin-bottom: 10px; /* Agrega espacio entre los campos */
-}
-
-/* Estilos para los campos de entrada 
-input#usuario {
-    max-width: 40ch; /* Limita el ancho a xx caracteres 
-}
-
-input#contrasena {
-    max-width: 40ch; /* Limita el ancho a xx caracteres
-}*/
+    }
 
 /*Para que el color de fondo del botón de envío del formulario */
 button[type="submit"] {
