@@ -202,7 +202,7 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  left: 94%;
+  left: 93%;
   /*Cambia la posición del círculo*/
   transform: translate(-50%, -50%);
   width: 40px;
